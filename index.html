@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Taubenbuch/Index</title>
+ <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+ <meta name="robots" content="noindex" />
+ <link rel="shortcut icon" href="taubenbuch7favicon.ico">
+ <link rel="icon" href="taubenbuch/favicon.ico" type="image/ico">
+ <link rel="stylesheet" href="taubenbuch/css/style.css" type="text/css" />
+ <link rel="stylesheet" href="taubenbuch/css/menue.css"/>
+ <link rel="stylesheet" href="taubenbuch/css/text.css" type="text/css" />
+</head>
+<body>
+<div id="anzeigebereich">
+  <div id="kopf"><img src="http://taeuber.ddns.net:8000/bild/kopf.png" alt="Kopf"  width="100%" height="auto">
+  <img src="http://taeuber.ddns.net:8000/bild/logo.png" alt="Logo" width="100%" height="auto">  
+  </div><br>
+</div>
+  <script>
+if (document.getElementById('topline')) {
+        window.onload = window.onresize = function (evt) {
+                var width = window.innerWidth ||  (window.document.documentElement.clientWidth || window.document.body.clientWidth);
+                var height = window.innerHeight || (window.document.documentElement.clientHeight || window.document.body.clientHeight);
+                document.getElementById('topline').innerHTML = '<p>' + width + '</p>'
+        }
+}
+
+$('#home').click(function() {
+        $('html, body').animate({
+            scrollTop: $("#topline").offset().top
+        }, 2000);
+});
+</script>
+  
+  </body>
+</html>
+
